@@ -107,12 +107,12 @@
 %% Sub-heading: Arial 12pt Bold
 %% Sub-sub-heading: Arial 12pt Bold
 
-% Chapter: 14pt Bold, centred with "CHAPTER X" on one line and title below
-\titleformat{\chapter}[display]
+% Chapter: 14pt Bold, centred, "CHAPTER X: Title" on one line
+\titleformat{\chapter}[block]
   {\normalfont\fontsize{14}{16.8}\bfseries\centering}
-  {\MakeUppercase{\chaptertitlename}\ \thechapter}
-  {0pt}
-  {\fontsize{14}{16.8}\bfseries\centering}
+  {\MakeUppercase{\chaptertitlename}\ \thechapter:}
+  {0.4em}
+  {\fontsize{14}{16.8}\bfseries}
 
 \titlespacing*{\chapter}{0pt}{-20pt}{20pt}
 
