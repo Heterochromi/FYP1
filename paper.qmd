@@ -28,7 +28,7 @@ format:
     shift-heading-level-by: 0
 
     # -- Keep intermediate .tex for debugging ---------------------------------
-    keep-tex: true
+    keep-tex: false
 
     # -- Custom variables passed to LaTeX via header --------------------------
     include-in-header:
@@ -48,7 +48,7 @@ format:
           \supervisorname{Dr. Supervisor Name}
           \coursecode{CPT6314}
           \projectphase{Project I}
-          \terminfo{2510 Term}
+          \terminfo{2610 Term}
 
     include-before-body:
       - text: |
