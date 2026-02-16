@@ -81,21 +81,48 @@
 %% --------------------------------------------------------------------------
 %% 3. PAGE NUMBERING AND HEADERS/FOOTERS
 %% --------------------------------------------------------------------------
-%% Page numbers: bottom centre, every page except title page.
-%% Preliminary pages: lowercase roman. Main text: arabic.
+%% Header: Project ID (left), page number (right), blue line below.
+%% Footer: blue line above, "Prepared by: Name" (left),
+%%         "CourseCode ProjectPhase Term" (right).
+%% Cover and title pages have no header/footer.
 
-\fancypagestyle{plain}{%
-  \fancyhf{}%
-  \fancyfoot[C]{\thepage}%
-  \renewcommand{\headrulewidth}{0pt}%
-  \renewcommand{\footrulewidth}{0pt}%
+% Define the MMU blue colour for header/footer rules
+\definecolor{mmublue}{RGB}{0, 84, 166}
+
+% Custom rule commands for coloured lines
+\newcommand{\mmuheadrule}{%
+  \vspace{4pt}%
+  {\color{mmublue}\hrule height 1.5pt}%
+}
+\newcommand{\mmufootrule}{%
+  {\color{mmublue}\hrule height 1.5pt}%
+  \vspace{4pt}%
 }
 
+% Main page style with header and footer
 \fancypagestyle{fypstyle}{%
   \fancyhf{}%
-  \fancyfoot[C]{\thepage}%
+  \fancyhead[L]{\small\@projectid}%
+  \fancyhead[R]{\small\thepage}%
+  \fancyfoot[L]{\small Prepared by: \@studentname}%
+  \fancyfoot[R]{\small \@coursecode\ \@projectphase\ \@terminfo}%
+  \renewcommand{\headrulewidth}{0pt}%  % disable default rule
+  \renewcommand{\footrulewidth}{0pt}%  % disable default rule
+  \renewcommand{\headrule}{\mmuheadrule}%
+  \renewcommand{\footrule}{\mmufootrule}%
+}
+
+% "plain" style used by chapter opening pages — same layout
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[L]{\small\@projectid}%
+  \fancyhead[R]{\small\thepage}%
+  \fancyfoot[L]{\small Prepared by: \@studentname}%
+  \fancyfoot[R]{\small \@coursecode\ \@projectphase\ \@terminfo}%
   \renewcommand{\headrulewidth}{0pt}%
   \renewcommand{\footrulewidth}{0pt}%
+  \renewcommand{\headrule}{\mmuheadrule}%
+  \renewcommand{\footrule}{\mmufootrule}%
 }
 
 \pagestyle{fypstyle}
@@ -193,6 +220,9 @@
 \newcommand{\degreename}[1]{\gdef\@degreename{#1}}
 \newcommand{\supervisorname}[1]{\gdef\@supervisorname{#1}}
 \newcommand{\logopath}[1]{\gdef\@logopath{#1}}
+\newcommand{\coursecode}[1]{\gdef\@coursecode{#1}}
+\newcommand{\projectphase}[1]{\gdef\@projectphase{#1}}
+\newcommand{\terminfo}[1]{\gdef\@terminfo{#1}}
 
 % Default logo path
 \gdef\@logopath{logo.png}
@@ -208,6 +238,9 @@
 \gdef\@reporttype{INTERIM}
 \gdef\@degreename{BACHELOR OF INFORMATION TECHNOLOGY}
 \gdef\@supervisorname{Supervisor Name}
+\gdef\@coursecode{CPT6314}
+\gdef\@projectphase{Project I}
+\gdef\@terminfo{2510 Term}
 
 %% --------------------------------------------------------------------------
 %% 8. COVER PAGE

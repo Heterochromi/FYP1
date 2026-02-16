@@ -46,6 +46,9 @@ format:
           \submissionyear{2026}
           \reporttype{INTERIM}
           \supervisorname{Dr. Supervisor Name}
+          \coursecode{CPT6314}
+          \projectphase{Project I}
+          \terminfo{2510 Term}
 
     include-before-body:
       - text: |
