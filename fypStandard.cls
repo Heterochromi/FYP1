@@ -1,6 +1,6 @@
 %% fypStandard.cls
 %% LaTeX Document Class for MMU FCI Final Year Project Reports
-%% Based on the FYP Handbook (Revised APR 2025)
+%% Based on the FYP Handbook (Revised FEB 2026)
 %% Faculty of Computing and Informatics, Multimedia University
 %%
 %% Designed for use with Quarto (Pandoc → XeLaTeX pipeline)
