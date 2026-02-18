@@ -9,6 +9,7 @@ MMU FYP RENDER FORMATE ACCORDING TO THE HANDBOOK IN DETAIL.
 ```quarto install tinytex```
 
 this is a pdf render engine
+-------------------------------------------------
 
 
 then either install quarto extension in your IDE (VS CODE EASIEST), click preview
