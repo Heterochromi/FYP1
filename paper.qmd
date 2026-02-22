@@ -44,9 +44,9 @@ format:
       | $\beta$  | Beta  |
       | MMU | MULTIMEDIA UNIVERSITY |
     list-of-appendices: |
-      Appendix A: Gantt Chart \
-      Appendix B: FYP I Meeting Logs \
-      Appendix C: Turnitin Similarity Index Page
+      Appendix A: FYP I Meeting Logs \
+      Appendix B: Turnitin Similarity Index page \
+      Appendix C: Technical documentation
 ---
 
 <!-- ========================================================================
