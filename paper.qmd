@@ -235,8 +235,6 @@ Describe the deployment plan, if applicable.
      CHAPTER 6: CONCLUSION
      ======================================================================== -->
 
-
-
 # Conclusion
 
 Summarize what has been achieved related to the objectives, and what is to be achieved in the next phase of the project. Describe any issues experienced during the project such as problems encountered.
@@ -251,35 +249,15 @@ Summarize what has been achieved related to the objectives, and what is to be ac
 #bibliography("references.bib", title: [References], style: "apa", full: true)
 ```
 
+{{< pagebreak >}}
 <!-- ========================================================================
      APPENDICES
      ======================================================================== -->
 
-{{< pagebreak >}}
-
- <!-- # Appendix A: Gantt Chart {.unnumbered} -->
-
+<!-- # Appendix A: FYP I Meeting Logs {.unnumbered} -->
 ```{=typst}
 #align(center)[
-  #heading(level: 1, numbering: none)[Appendix A: Gantt Chart]
-]
-```
-
-<!-- Option 1: Include a PDF file (recommended for PDFs) -->
-<!-- Uncomment the line below and replace with your actual file path -->
-<!-- \includepdf[pages=-]{gantt_chart.pdf} -->
-
-<!-- Option 2: Include a PNG/JPG image -->
-<!-- ![Gantt Chart](gantt_chart.png){width=100%} -->
-
-Replace this text with your Gantt chart using one of the options above.
-
-{{< pagebreak >}}
-
-<!-- # Appendix B: FYP I Meeting Logs {.unnumbered} -->
-```{=typst}
-#align(center)[
-  #heading(level: 1, numbering: none)[Appendix B: FYP I Meeting Logs]
+  #heading(level: 1, numbering: none)[Appendix A: FYP I Meeting Logs]
 ]
 ```
 
@@ -301,10 +279,13 @@ Replace this text with your meeting logs using one of the options above.
 A minimum of six (6) meeting logs are required.
 
 {{< pagebreak >}}
-<!-- # Appendix C: Turnitin Similarity Index Page {.unnumbered} -->
+
+
+ <!-- # Appendix B: Turnitin Similarity Index page {.unnumbered} -->
+
 ```{=typst}
 #align(center)[
-  #heading(level: 1, numbering: none)[Appendix C: Turnitin Similarity Index Page]
+  #heading(level: 1, numbering: none)[Appendix B: Turnitin Similarity Index page]
 ]
 ```
 
@@ -314,5 +295,22 @@ A minimum of six (6) meeting logs are required.
 <!-- Or if it's a screenshot/image: -->
 <!-- ![Turnitin Similarity Index](turnitin_report.png){width=100%} -->
 
-Replace this text with your Turnitin report using one of the options above.
-Overall Similarity Index must be $\leq$ 20%.
+Replace this text with your Turnitin Similarity Index page by either attaching the pdf file or a screenshot of the report.
+Overall Similarity must be $\leq$ 20%.
+
+
+{{< pagebreak >}}
+<!-- # Appendix C: Turnitin Similarity Index Page {.unnumbered} -->
+```{=typst}
+#align(center)[
+  #heading(level: 1, numbering: none)[Appendix C: Technical documentation]
+]
+```
+
+<!-- Include the Turnitin report PDF (usually just 1 page): -->
+<!-- \includepdf[pages=1]{turnitin_report.pdf} -->
+
+<!-- Or if it's a screenshot/image: -->
+<!-- ![Turnitin Similarity Index](turnitin_report.png){width=100%} -->
+
+Etiher attach or write your technical documentation here.
