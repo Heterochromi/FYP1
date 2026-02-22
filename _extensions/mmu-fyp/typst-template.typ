@@ -1,4 +1,4 @@
-#let mmu-blue = rgb(0, 84, 166)
+#let mmu-blue = rgb(70, 80, 164)
 
 #let article(
   title: none,
@@ -55,7 +55,7 @@
 
   // Cover Page
   if title != none {
-    set page(margin: (left: 38mm, right: 28mm, top: 28mm, bottom: 28mm), numbering: none)
+    set page(margin: (left: 25.4mm, right: 25.4mm, top: 25.4mm, bottom: 25.4mm), numbering: none)
     align(center)[
       #v(-0.5cm)
       #image("logo.png", width: 65%)
@@ -80,7 +80,7 @@
 
   // Title Page
   if title != none {
-    set page(margin: (left: 38mm, right: 28mm, top: 28mm, bottom: 28mm), numbering: none)
+    set page(margin: (left: 25.4mm, right: 25.4mm, top: 25.4mm, bottom: 25.4mm), numbering: none)
     align(center)[
       #v(1cm)
       #text(size: 14pt, weight: "bold", project-id)
