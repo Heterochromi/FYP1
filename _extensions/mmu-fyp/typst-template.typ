@@ -112,7 +112,6 @@
   }
 
   // --- Start Preliminary pages with Roman Numerals ---
-  counter(page).update(1)
   set page(
     margin: (left: 38mm, right: 28mm, top: 28mm, bottom: 28mm),
     numbering: "i",

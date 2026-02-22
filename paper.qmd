@@ -10,7 +10,7 @@ format:
   mmu-fyp-typst:
     keep-typ: true
     title: "Your Approved Project Title Goes Here"
-    project-id: "FYP01-IS-T2610-0001"
+    project-id: "CCCCC-SS-TTTTT-NNNN"
     student-id: "000XX0000X"
     student-name: "YOUR FULL NAME"
     programme: "BACHELOR OF INFORMATION TECHNOLOGY"
@@ -44,9 +44,10 @@ format:
       | $\beta$  | Beta  |
       | MMU | MULTIMEDIA UNIVERSITY |
     list-of-appendices: |
-      Appendix A: FYP I Meeting Logs \
-      Appendix B: Turnitin Similarity Index page \
-      Appendix C: Technical documentation
+      Appendix A: Gantt Chart \
+      Appendix B: FYP I Meeting Logs \
+      Appendix C: Turnitin Similarity Index Page \
+      Appendix D: Technical documentation
 ---
 
 <!-- ========================================================================
@@ -108,6 +109,9 @@ Summarize the key points covered in this chapter and provide a brief overview of
 This chapter presents a comprehensive review of existing literature related to the project topic.
 
 ## Topic Title
+
+Here is an example of an inline citation referencing a paper in the bibliography: @sample2024.
+You can also place citations in brackets like this [@sample2024].
 
 ### Sub-topic
 
@@ -254,10 +258,23 @@ Summarize what has been achieved related to the objectives, and what is to be ac
      APPENDICES
      ======================================================================== -->
 
-<!-- # Appendix A: FYP I Meeting Logs {.unnumbered} -->
+<!-- # Appendix A: Gantt Chart {.unnumbered} -->
 ```{=typst}
 #align(center)[
-  #heading(level: 1, numbering: none)[Appendix A: FYP I Meeting Logs]
+  #heading(level: 1, numbering: none)[Appendix A: Gantt Chart]
+]
+```
+<!-- ![Gantt Chart](gantt_chart.png){width=100%} -->
+
+
+Attach your Gantt chart here.
+
+{{< pagebreak >}}
+
+<!-- # Appendix B: FYP I Meeting Logs {.unnumbered} -->
+```{=typst}
+#align(center)[
+  #heading(level: 1, numbering: none)[Appendix B: FYP I Meeting Logs]
 ]
 ```
 
@@ -281,11 +298,11 @@ A minimum of six (6) meeting logs are required.
 {{< pagebreak >}}
 
 
- <!-- # Appendix B: Turnitin Similarity Index page {.unnumbered} -->
+ <!-- # Appendix C: Turnitin Similarity Index page {.unnumbered} -->
 
 ```{=typst}
 #align(center)[
-  #heading(level: 1, numbering: none)[Appendix B: Turnitin Similarity Index page]
+  #heading(level: 1, numbering: none)[Appendix C: Turnitin Similarity Index page]
 ]
 ```
 
@@ -300,17 +317,11 @@ Overall Similarity must be $\leq$ 20%.
 
 
 {{< pagebreak >}}
-<!-- # Appendix C: Turnitin Similarity Index Page {.unnumbered} -->
+<!-- # Appendix D: Technical documentation {.unnumbered} -->
 ```{=typst}
 #align(center)[
-  #heading(level: 1, numbering: none)[Appendix C: Technical documentation]
+  #heading(level: 1, numbering: none)[Appendix D: Technical documentation]
 ]
 ```
 
-<!-- Include the Turnitin report PDF (usually just 1 page): -->
-<!-- \includepdf[pages=1]{turnitin_report.pdf} -->
-
-<!-- Or if it's a screenshot/image: -->
-<!-- ![Turnitin Similarity Index](turnitin_report.png){width=100%} -->
-
-Etiher attach or write your technical documentation here.
+Etiher attach or write your technical documentation here. if needed.
