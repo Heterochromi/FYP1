@@ -112,6 +112,7 @@
   }
 
   // --- Start Preliminary pages with Roman Numerals ---
+  counter(page).update(1)
   set page(
     margin: (left: 38mm, right: 28mm, top: 28mm, bottom: 28mm),
     numbering: "i",
@@ -132,7 +133,6 @@
       #course-code #project-phase #term-info
     ],
   )
-  counter(page).update(2)
 
   // Copyright Page
   [
@@ -224,6 +224,7 @@
   ]
 
   // --- Main Matter Arabic numbering ---
+  counter(page).update(1)
   set page(
     margin: (left: 38mm, right: 28mm, top: 28mm, bottom: 28mm),
     numbering: "1",
@@ -244,7 +245,6 @@
       #course-code #project-phase #term-info
     ],
   )
-  counter(page).update(1)
 
   doc
 }

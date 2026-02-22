@@ -10,8 +10,8 @@ format:
   mmu-fyp-typst:
     keep-typ: true
     title: "Your Approved Project Title Goes Here"
-    project-id: "FYP01-IS-T2510-0001"
-    student-id: "1234567890"
+    project-id: "FYP01-IS-T2610-0001"
+    student-id: "000XX0000X"
     student-name: "YOUR FULL NAME"
     programme: "BACHELOR OF INFORMATION TECHNOLOGY"
     degree-name: "BACHELOR OF INFORMATION TECHNOLOGY"
