@@ -135,6 +135,7 @@
 
   // Copyright Page
   [
+    #heading(level: 1, numbering: none, outlined: true)[Copyright]
     #v(3cm)
     #align(center)[
       #text(size: 12pt)[(c) #submission-year Universiti Telekom Sdn. Bhd. ALL RIGHTS RESERVED.]
@@ -146,9 +147,7 @@
 
   // Declaration Page
   [
-    #align(center)[
-      #text(size: 14pt, weight: "bold", [DECLARATION])
-    ]
+    #heading(level: 1, numbering: none, outlined: true)[Declaration]
     #v(2cm)
     I hereby declare that the work has been done by myself and no portion of the work contained in this report has been submitted in support of any application for any other degree or qualification of this or any other university or institution of learning.
     #v(4cm)
@@ -162,9 +161,7 @@
 
   // Acknowledgements
   if acknowledgements != none [
-    #align(center)[
-      #text(size: 14pt, weight: "bold", upper[Acknowledgements])
-    ]
+    #heading(level: 1, numbering: none, outlined: true)[Acknowledgements]
     #v(1cm)
     #acknowledgements
     #pagebreak()
@@ -172,9 +169,7 @@
 
   // Abstract
   if abstract != none [
-    #align(center)[
-      #text(size: 14pt, weight: "bold", upper[Abstract])
-    ]
+    #heading(level: 1, numbering: none, outlined: true)[Abstract]
     #v(1cm)
     #abstract
     #pagebreak()
@@ -182,40 +177,30 @@
 
   // TOC
   [
-    #align(center)[
-      #text(size: 14pt, weight: "bold", [TABLE OF CONTENTS])
-    ]
+    #heading(level: 1, numbering: none, outlined: false)[Table of Contents]
     #v(1cm)
     #outline(title: none, indent: auto)
     #pagebreak()
 
-    #align(center)[
-      #text(size: 14pt, weight: "bold", upper[List of Tables])
-    ]
+    #heading(level: 1, numbering: none, outlined: true)[List of Tables]
     #v(1cm)
     #outline(title: none, target: figure.where(kind: "quarto-float-tbl").or(figure.where(kind: table)))
     #pagebreak()
 
-    #align(center)[
-      #text(size: 14pt, weight: "bold", upper[List of Figures])
-    ]
+    #heading(level: 1, numbering: none, outlined: true)[List of Figures]
     #v(1cm)
     #outline(title: none, target: figure.where(kind: "quarto-float-fig").or(figure.where(kind: image)))
     #pagebreak()
 
     #if list-of-symbols != none [
-      #align(center)[
-        #text(size: 14pt, weight: "bold", [LIST OF ABBREVIATIONS / SYMBOLS])
-      ]
+      #heading(level: 1, numbering: none, outlined: false)[List of Abbreviations / Symbols]
       #v(1cm)
       #list-of-symbols
       #pagebreak()
     ]
 
     #if list-of-appendices != none [
-      #align(center)[
-        #text(size: 14pt, weight: "bold", [LIST OF APPENDICES])
-      ]
+      #heading(level: 1, numbering: none, outlined: false)[List of Appendices]
       #v(1cm)
       #list-of-appendices
       #pagebreak()
