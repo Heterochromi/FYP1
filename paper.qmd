@@ -3,7 +3,6 @@
 # MMU FCI Final Year Project Report — Quarto Configuration
 # =============================================================================
 # INSTRUCTIONS: Replace all placeholder values below with your actual details.
-# This file is designed to work with fypStandard.cls
 # =============================================================================
 
 format:
