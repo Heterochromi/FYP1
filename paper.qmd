@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# MMU FCI Final Year Project Report — Quarto Configuration
+# MMU FCI Final Year Project Report — Quarto Configuration (typst format)
 # =============================================================================
 # INSTRUCTIONS: Replace all placeholder values below with your actual details.
 # =============================================================================
