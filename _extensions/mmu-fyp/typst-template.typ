@@ -193,14 +193,14 @@
     #pagebreak()
 
     #if list-of-symbols != none [
-      #heading(level: 1, numbering: none, outlined: false)[List of Abbreviations / Symbols]
+      #heading(level: 1, numbering: none, outlined: true)[List of Abbreviations / Symbols]
       #v(1cm)
       #list-of-symbols
       #pagebreak()
     ]
 
     #if list-of-appendices != none [
-      #heading(level: 1, numbering: none, outlined: false)[List of Appendices]
+      #heading(level: 1, numbering: none, outlined: true)[List of Appendices]
       #v(1cm)
       #list-of-appendices
       #pagebreak()
