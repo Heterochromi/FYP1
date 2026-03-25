@@ -92,7 +92,7 @@ git clone https://github.com/Heterochromi/FYP1.git
 2. Click on the **Preview** button on the top right corner of the IDE (you can also use `quarto preview paper.qmd` in the terminal if you don't have an extension).
 3. You should see a rendered PDF on the right side of your screen or in your browser if you used the terminal.
 4. Your PDF should be inside the same directory as `paper.qmd` named `paper.pdf`.
-5. **You are done! You can go ahead and start writing your paper.**
+5. **You are done! You can go ahead and start writing your paper insude `paper.qmd`.**
 
 > **Optional recommendation:** Delete the `.git` directory so you can push to your own repository if needed.
 
