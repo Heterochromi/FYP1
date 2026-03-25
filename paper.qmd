@@ -320,4 +320,4 @@ Overall Similarity must be $\leq$ 20%.
 ]
 ```
 
-Etiher attach or write your technical documentation here. if needed.
+Either attach or write your technical documentation here. if needed.
