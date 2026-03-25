@@ -46,7 +46,7 @@ Lastly, and arguably the best feature for us as **bachelor students** who are ne
 
 You will likely need to occasionally check the documentation for Quarto and Markdown to properly write your paper, and you will also need to use the CLI. At this point in your degree, doing this should be an afterthought. The minimal time you spend looking up docs and commands will be significantly less than the time you would waste fighting formatting in a word processor. If you are completely uncomfortable with the CLI, Quarto might not be for you, but I strongly suggest you try it anyway because the barrier to entry is incredibly low.
 
-* **Quarto:** [https://quarto.org/docs](https://quarto.org/docs)
+* **Quarto:** [https://quarto.org/docs](https://quarto.org/docs/guide/)
 * **Markdown:** [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/)
 
 For absolute control, you can edit the output Typst PDF directly. You will most likely not need this, but here are the Typst docs:
