@@ -40,7 +40,7 @@ Typesetting produces perfectly replicable, professional-looking documents accord
 
 Quarto allows you to use Markdown or even other markup languages to produce a professional document with minimal effort, and thanks to Pandoc, it can be used as a "write once, publish anywhere" tool. Different publishers have different formatting requirements; with Quarto, you can simply change a few settings and publish to their exact format instead of rewriting your entire paper to meet their needs. So, it is super helpful for researchers to get their papers accessible in as many places as possible. 
 
-Lastly, and arguably the best feature for us as bachelor students who are new to academic writing, is the extremely low entry barrier to using Quarto. In the past, you had to learn LaTeX and write literal code to produce a paper. Even with the release of Typst, which made it much easier, it would still take a large chunk of your time learning it instead of writing your paper. Now, with Quarto, you can learn the basics of Markdown in under 30 minutes, and Quarto handles all the complex formatting for you.
+Lastly, and arguably the best feature for us as **bachelor students** who are new to academic writing, is the extremely low entry barrier to using Quarto. In the past, you had to learn LaTeX and write literal code to produce a paper. Even with the release of Typst, which made it much easier, it would still take a large chunk of your time learning it instead of writing your paper. Now, with Quarto, you can learn the basics of Markdown in under 30 minutes, and Quarto handles all the complex formatting for you.
 
 ## ⚠️ Quick Notice Before You Move On
 
