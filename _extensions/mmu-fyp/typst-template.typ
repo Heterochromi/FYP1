@@ -18,6 +18,7 @@
   acknowledgements: none,
   list-of-symbols: none,
   list-of-appendices: none,
+  list-of-definitions: none,
   doc,
 ) = {
 
@@ -205,7 +206,15 @@
       #list-of-appendices
       #pagebreak()
     ]
+
+    #if list-of-definitions != none [
+      #heading(level: 1, numbering: none, outlined: true)[List of Definitions]
+      #v(1cm)
+      #list-of-definitions
+      #pagebreak()
+    ]
   ]
+  
 
   // --- Main Matter Arabic numbering ---
   counter(page).update(1)

@@ -50,5 +50,8 @@ $endif$
 $if(list-of-appendices)$
   list-of-appendices: [$list-of-appendices$],
 $endif$
+$if(list-of-definitions)$
+  list-of-definitions: [$list-of-definitions$],
+$endif$
   doc,
 )
