@@ -1,148 +1,59 @@
 ---
 # =============================================================================
-# MMU FCI Final Year Project Report — Quarto Configuration
+# MMU FCI Final Year Project Report — Quarto Configuration (typst format)
 # =============================================================================
 # INSTRUCTIONS: Replace all placeholder values below with your actual details.
-# This file is designed to work with fypStandard.cls
 # =============================================================================
 
 format:
-  pdf:
-    # -- Document class -------------------------------------------------------
-    documentclass: fypStandard
-    classoption: []
+  mmu-fyp-typst:
+    keep-typ: true
+    title: "Your Approved Project Title Goes Here"
+    project-id: "CCCCC-SS-TTTTT-NNNN"
+    student-id: "000XX0000X"
+    student-name: "YOUR FULL NAME"
+    programme: "BACHELOR OF INFORMATION TECHNOLOGY"
+    degree-name: "BACHELOR OF INFORMATION TECHNOLOGY"
+    submission-month-year: "JUNE 2026"
+    submission-year: "2026"
+    report-type: "INTERIM"
+    supervisor-name: "Dr. Supervisor Name"
+    course-code: "CPT6314"
+    project-phase: "Project I"
+    term-info: "2610 Term"
+    abstract: |
+      Write your abstract here. In one page, certainly not more than two,
+      summarize the main features of your project; describe what problem
+      you are solving and how you propose to solve it. This brief overview
+      should give a snapshot of the overall structure of your final year project.
+    acknowledgements: |
+      I would like to express my sincere gratitude to my supervisor,
+      for the continuous guidance and support throughout this project.
 
-    # -- LaTeX engine (XeLaTeX for Arial font support via fontspec) -----------
-    pdf-engine: xelatex
+      I would also like to thank the Faculty of Computing and Informatics,
+      Multimedia University, for providing the resources and environment
+      necessary to complete this work.
 
-    # -- Disable Quarto's auto TOC/LOF/LOT so we place them manually ---------
-    #    in the correct position within the preliminary pages (Roman numerals).
-    toc: false
-    lof: false
-    lot: false
-
-    # -- Section numbering & top-level-division = chapter ---------------------
-    number-sections: true
-    number-depth: 4
-    top-level-division: chapter
-    shift-heading-level-by: 0
-
-    # -- Keep intermediate .tex for debugging ---------------------------------
-    keep-tex: false
-
-    # -- Custom variables passed to LaTeX via header --------------------------
-    include-in-header:
-      - text: |
-          % ===================================================================
-          % PROJECT METADATA — Edit these values for your project
-          % ===================================================================
-          \projectid{FYP01-IS-T2510-0001}
-          \projecttitle{Your Approved Project Title Goes Here}
-          \studentid{1234567890}
-          \studentname{YOUR FULL NAME}
-          \programme{BACHELOR OF INFORMATION TECHNOLOGY}
-          \degreename{BACHELOR OF INFORMATION TECHNOLOGY}
-          \submissionmonthyear{JUNE 2026}
-          \submissionyear{2026}
-          \reporttype{INTERIM}
-          \supervisorname{Dr. Supervisor Name}
-          \coursecode{CPT6314}
-          \projectphase{Project I}
-          \terminfo{2610 Term}
-
-    include-before-body:
-      - text: |
-          % ===================================================================
-          % PRELIMINARY PAGES (Cover, Title, Copyright, Declaration, etc.)
-          % ===================================================================
-
-          % -- Cover Page --
-          \makecoverpage
-
-          % -- Title Page --
-          \maketitlepage
-
-          % -- Switch to Roman numeral page numbering for preliminary pages --
-          \frontmatteraliased
-
-          % -- Copyright Page --
-          \makecopyrightpage
-
-          % -- Declaration Page --
-          \makedeclarationpage
-
-          % -- Acknowledgements --
-          \begin{acknowledgements}
-          I would like to express my sincere gratitude to my supervisor,
-          for the continuous guidance and support throughout this project.
-
-          I would also like to thank the Faculty of Computing and Informatics,
-          Multimedia University, for providing the resources and environment
-          necessary to complete this work.
-
-          Finally, I am grateful to my family and friends for their
-          encouragement and understanding.
-          \end{acknowledgements}
-
-          % -- Abstract --
-          \begin{abstract}
-          Write your abstract here. In one page, certainly not more than two,
-          summarize the main features of your project; describe what problem
-          you are solving and how you propose to solve it. This brief overview
-          should give a snapshot of the overall structure of your final year
-          project.
-          \end{abstract}
-
-          % -- Table of Contents (manually generated in prelim pages) --
-          \renewcommand*\contentsname{TABLE OF CONTENTS}
-          {
-          \hypersetup{linkcolor=black}
-          \setcounter{tocdepth}{3}
-          \tableofcontents
-          }
-
-          % -- List of Tables --
-          \listoftables
-
-          % -- List of Figures --
-          \listoffigures
-
-          % -- List of Abbreviations (add your abbreviations below) --
-          \begin{listofabbreviations}
-          \begin{tabular}{@{}ll@{}}
-          API   & Application Programming Interface \\
-          FYP   & Final Year Project \\
-          MMU   & Multimedia University \\
-          FCI   & Faculty of Computing and Informatics \\
-          UML   & Unified Modeling Language \\
-          \end{tabular}
-          \end{listofabbreviations}
-
-          % -- List of Appendices --
-          \begin{listofappendices}
-          \begin{tabular}{@{}ll@{}}
-          Appendix A & Gantt Chart \\
-          Appendix B & FYP I Meeting Logs \\
-          Appendix C & Turnitin Similarity Index Page \\
-          \end{tabular}
-          \end{listofappendices}
-
-          % ===================================================================
-          % SWITCH TO MAIN MATTER (Arabic page numbering starts at 1)
-          % ===================================================================
-          \mainmatteraliased
-
-# -- Bibliography (APA style) -----------------------------------------------
-bibliography: references.bib
-csl: apa.csl
-cite-method: citeproc
-nocite: |
-  @*
+      Finally, I am grateful to my family and friends for their
+      encouragement and understanding.
+    list-of-symbols: |
+      | Symbol | Description |
+      |---|---|
+      | $\alpha$ | Alpha |
+      | $\beta$  | Beta  |
+      | MMU | MULTIMEDIA UNIVERSITY |
+    list-of-appendices: |
+      Appendix A: Gantt Chart \
+      Appendix B: FYP I Meeting Logs \
+      Appendix C: Turnitin Similarity Index Page \
+      Appendix D: Technical documentation
 ---
 
 <!-- ========================================================================
      CHAPTER 1: INTRODUCTION
      ======================================================================== -->
+
+
 
 # Introduction
 
@@ -154,7 +65,7 @@ Provide an overview description of the project. How did the problem present itse
 
 Clearly define the problem that this project aims to address. Explain the context and significance of the problem.
 
-![example figure](images/example.png)
+![example figure smiley](images/example.png){#figure-example}
 
 ## Project Objectives
 
@@ -188,6 +99,8 @@ Summarize the key points covered in this chapter and provide a brief overview of
      CHAPTER 2: LITERATURE REVIEW
      ======================================================================== -->
 
+
+
 # Literature Review
 
 ## Overview
@@ -196,18 +109,18 @@ This chapter presents a comprehensive review of existing literature related to t
 
 ## Topic Title
 
+Here is an example of an inline citation referencing a paper in the bibliography: @sample2024.
+You can also place citations in brackets like this [@sample2024].
+
 ### Sub-topic
 
 Discuss relevant literature, prior work, and existing solutions related to your project.
 
-| example | table |
-| --- | --- |
-| **Newest logs first** | `journalctl -r` |
-| **Current boot only** | `journalctl -b` |
-| **Follow live (real-time)** | `journalctl -f` |
-| **Specific service** | `journalctl -u <Service Name>` |
-| **Show last 50 lines** | `journalctl -n 50` |
-: example table of commands
+| A | B | C | D |
+| --- | --- | --- | --- |
+| 0.279 | 0.312 | - | (1) |
+| 1.68 | 0.168 | 0.025 | (2) |
+: example table nums {#tbl-example}
 
 
 ## Summary
@@ -217,6 +130,8 @@ Summarize the key findings from the literature review and identify the research 
 <!-- ========================================================================
      CHAPTER 3: REQUIREMENTS ANALYSIS
      ======================================================================== -->
+
+
 
 # Requirements Analysis
 
@@ -260,6 +175,8 @@ Describe the user requirements gathered from stakeholders.
      CHAPTER 4: SYSTEM DESIGN
      ======================================================================== -->
 
+
+
 # System Design
 
 ## Overview
@@ -298,6 +215,8 @@ Summarize the system design decisions made.
      CHAPTER 5: IMPLEMENTATION PLAN
      ======================================================================== -->
 
+
+
 # Implementation Plan
 
 ## Development Phase
@@ -324,38 +243,36 @@ Summarize what has been achieved related to the objectives, and what is to be ac
      REFERENCES
      ======================================================================== -->
 
-\newpage
+{{< pagebreak >}}
 
-# References {.unnumbered}
+```{=typst}
+#bibliography("references.bib", title: [References], style: "apa", full: true)
+```
 
-::: {#refs}
-:::
-
+{{< pagebreak >}}
 <!-- ========================================================================
      APPENDICES
      ======================================================================== -->
 
-\newpage
-\appendix
-
-# Gantt Chart {.unnumbered}
-
-\addcontentsline{toc}{chapter}{Appendix A: Gantt Chart}
-
-<!-- Option 1: Include a PDF file (recommended for PDFs) -->
-<!-- Uncomment the line below and replace with your actual file path -->
-<!-- \includepdf[pages=-]{gantt_chart.pdf} -->
-
-<!-- Option 2: Include a PNG/JPG image -->
+<!-- # Appendix A: Gantt Chart {.unnumbered} -->
+```{=typst}
+#align(center)[
+  #heading(level: 1, numbering: none)[Appendix A: Gantt Chart]
+]
+```
 <!-- ![Gantt Chart](gantt_chart.png){width=100%} -->
 
-Replace this text with your Gantt chart using one of the options above.
 
-\newpage
+Attach your Gantt chart here.
 
-# FYP I Meeting Logs {.unnumbered}
+{{< pagebreak >}}
 
-\addcontentsline{toc}{chapter}{Appendix B: FYP I Meeting Logs}
+<!-- # Appendix B: FYP I Meeting Logs {.unnumbered} -->
+```{=typst}
+#align(center)[
+  #heading(level: 1, numbering: none)[Appendix B: FYP I Meeting Logs]
+]
+```
 
 <!-- Include all 6+ meeting logs from a single PDF: -->
 <!-- \includepdf[pages=-]{meeting_logs.pdf} -->
@@ -374,11 +291,16 @@ Replace this text with your Gantt chart using one of the options above.
 Replace this text with your meeting logs using one of the options above.
 A minimum of six (6) meeting logs are required.
 
-\newpage
+{{< pagebreak >}}
 
-# Turnitin Similarity Index Page {.unnumbered}
 
-\addcontentsline{toc}{chapter}{Appendix C: Turnitin Similarity Index Page}
+ <!-- # Appendix C: Turnitin Similarity Index page {.unnumbered} -->
+
+```{=typst}
+#align(center)[
+  #heading(level: 1, numbering: none)[Appendix C: Turnitin Similarity Index page]
+]
+```
 
 <!-- Include the Turnitin report PDF (usually just 1 page): -->
 <!-- \includepdf[pages=1]{turnitin_report.pdf} -->
@@ -386,5 +308,16 @@ A minimum of six (6) meeting logs are required.
 <!-- Or if it's a screenshot/image: -->
 <!-- ![Turnitin Similarity Index](turnitin_report.png){width=100%} -->
 
-Replace this text with your Turnitin report using one of the options above.
-Overall Similarity Index must be $\leq$ 20%.
+Replace this text with your Turnitin Similarity Index page by either attaching the pdf file or a screenshot of the report.
+Overall Similarity must be $\leq$ 20%.
+
+
+{{< pagebreak >}}
+<!-- # Appendix D: Technical documentation {.unnumbered} -->
+```{=typst}
+#align(center)[
+  #heading(level: 1, numbering: none)[Appendix D: Technical documentation]
+]
+```
+
+Etiher attach or write your technical documentation here. if needed.
