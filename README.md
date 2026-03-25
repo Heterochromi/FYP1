@@ -36,6 +36,19 @@ Typesetting produces perfectly replicable professional looking documents accordi
 Quarto allows you to use markdown or even other markup languages to produce a professional document with minimal effort, and thanks to pandoc it can be used a write once publish anywhere tool, different publishing articles have different formatting requirements, with quarto you can simply change a few settings and publish to their exact format instead of rewriting your entire paper in whatever they need so it's super helpful for researchers to get their papers accessible in as many places as possible, lastly and arguably the best feature for us as bachelor students who are new to academic writing is the extremly low entry barrier to using quarto, in the past you hard to learn latex and write literal code to produce a paper even with the release to typst which made it much easier, it would still take a large chunk of your time learning it instead of writing your paper, now with quarto you can learn the basics of markdown in less than 30 minutes and quarto handles all the complex formatting for you.
 
 
+## QUICK NOTICE BEFORE YOU MOVE ON!!!!
+You will very likely need to look up information and documentation regarding, quarto and markdown to properly write your paper, you will also very likely need to use the CLI, this should be extremely easy at this point of your degree and overall the time you will spend reading docs or looking commands will be significantly less than the time you would spend getting formatting right on word processors.
+
+Quarto :https://quarto.org/docs
+
+Markdown :https://www.markdownguide.org/basic-syntax/
+
+For absolute control you can edit the output typst pdf directly, you most likely not need this but here is typst docs:
+https://typst.app/docs/
+
+
+
+
 # INSTALL QAURTO [https://quarto.org/docs/get-started/]
 
 use your operating system's installer
@@ -76,3 +89,10 @@ this will allow you to preview the document in real time and edit inside your ID
 5.You are done, You can go ahead and start writing your paper!!!!
 
 optional recommendation: delete the .git directory so you can push your own repo if needed.
+
+
+
+
+
+
+https://www.youtube.com/shorts/T2lgRadzk-0?feature=share
