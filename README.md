@@ -78,7 +78,7 @@ sudo pacman -S ttf-ms-fonts
 
 ## 2. Install Quarto's IDE Extension 
 
-[Download the VS Code Extension here.](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
+[Download the VS Code Extension here.](https://marketplace.visualstudio.com/items?itemName=quarto.quarto) or simply look up quarto in the extension tab and install it.
 
 This will allow you to preview the document in real time and edit inside your IDE. Many IDE extensions are available, but the best supported is VS Code.
 
