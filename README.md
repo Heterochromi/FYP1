@@ -2,6 +2,8 @@
 
 **Format rendered according to the handbook's exact specifications.**
 
+![ShowCase gif](showcase/showcase.gif)
+
 ## Overview
 
 This repository aims to help you replace typical word processors, such as Microsoft Word or LibreOffice Writer, with a more intuitive and powerful tool called **Quarto** for your MMU FYP interim report.
