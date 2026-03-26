@@ -84,7 +84,7 @@ sudo pacman -S ttf-ms-fonts
 
 This will allow you to preview the document in real time and edit inside your IDE. Many IDE extensions are available, but the best supported is VS Code.
 *
-> **Recommendation**: after installing the extension open VS code's settings and search for "quarto render on save" so rerenders can happen on file save.
+> **Recommendation**: after installing the extension open VS code's settings and search for "quarto render on save" and enable it so rerenders can happen on file save.
 
 ## 3. Clone Repository
 
