@@ -2,6 +2,8 @@
 
 **Format rendered according to the handbook's exact specifications.**
 
+![ShowCase gif](showcase/showcase.gif)
+
 ## Overview
 
 This repository aims to help you replace typical word processors, such as Microsoft Word or LibreOffice Writer, with a more intuitive and powerful tool called **Quarto** for your MMU FYP interim report.
@@ -81,6 +83,8 @@ sudo pacman -S ttf-ms-fonts
 [Download the VS Code Extension here.](https://marketplace.visualstudio.com/items?itemName=quarto.quarto) or simply look up quarto in the extension tab and install it.
 
 This will allow you to preview the document in real time and edit inside your IDE. Many IDE extensions are available, but the best supported is VS Code.
+*
+> **Recommendation**: after installing the extension open VS code's settings and search for "quarto render on save" and enable it so rerenders can happen on file save.
 
 ## 3. Clone Repository
 
@@ -92,7 +96,7 @@ git clone https://github.com/Heterochromi/FYP1.git
 2. Click on the **Preview** button on the top right corner of the IDE (you can also use `quarto preview paper.qmd` in the terminal if you don't have an extension).
 3. You should see a rendered PDF on the right side of your screen or in your browser if you used the terminal.
 4. Your PDF should be inside the same directory as `paper.qmd` named `paper.pdf`.
-5. **You are done! You can go ahead and start writing your paper insude `paper.qmd`.**
+5. **You are done! You can go ahead and start writing your paper inside `paper.qmd`.**
 
 > **Optional recommendation:** Delete the `.git` directory so you can push to your own repository if needed.
 
