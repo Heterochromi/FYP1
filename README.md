@@ -34,6 +34,11 @@ Under the hood, Quarto uses these three technologies:
 
 Quarto itself does not convert, render, or edit documents; it is an orchestrator for all the other three tools, making using them much easier and more intuitive.
 
+What quarto does under the hood:
+1. It takes your markdown file `.qmd` or `.md` and checks the YAML configuration at the top.
+2. It takes all the variables and the typst template and combines them into a single typst file using pandoc(markdown to typst code).
+3. It then uses typst to render the document into a PDF.
+
 ## Why Quarto? Why use a typesetting system instead of word processors?
 
 Word processors are great for short documents such as letters or company reports, but they are not designed for medium to long academic papers. You will often find yourself fighting the software to get the formatting right, and it is very easy to make a simple change and break the entire document. Overall, this is very unintuitive, distracting, and time-consuming for academic writing.
