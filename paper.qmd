@@ -112,8 +112,6 @@ This chapter presents a comprehensive review of existing literature related to t
 Here is an example of an inline citation referencing a paper in the bibliography: @sample2024.
 You can also place citations in brackets like this [@sample2024].
 
-sadsadasd.
-
 ### Sub-topic
 
 Discuss relevant literature, prior work, and existing solutions related to your project.
