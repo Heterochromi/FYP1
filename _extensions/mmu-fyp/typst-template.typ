@@ -134,17 +134,18 @@
       #set text(size: 10pt)
       #project-id
       #h(1fr)
-      #context counter(page).display("i")
+      Prepared by: #student-name
       #v(-0.5em)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
     ],
     footer: [
       #set text(size: 10pt)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
-      #v(-0.5em)
-      Prepared by: #student-name
-      #h(1fr)
-      #course-code #project-phase #term-info
+      #align(center)[
+        #context counter(page).display("i")
+      ]
+      #v(15mm)
+      // #course-code #project-phase #term-info
     ],
   )
 
@@ -232,17 +233,18 @@
       #set text(size: 10pt)
       #project-id
       #h(1fr)
-      #context counter(page).display("1")
+      Prepared by: #student-name
       #v(-0.5em)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
     ],
     footer: [
       #set text(size: 10pt)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
-      #v(-0.5em)
-      Prepared by: #student-name
-      #h(1fr)
-      #course-code #project-phase #term-info
+      #align(center)[
+        #context counter(page).display("1")
+      ]
+      #v(15mm)
+      // #course-code #project-phase #term-info
     ],
   )
 
