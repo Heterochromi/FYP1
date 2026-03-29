@@ -23,24 +23,38 @@
 
   // Typography
   set text(font: "Arial", size: 12pt, lang: "en")
-  set par(justify: true, leading: 1em) // ~1.5 spacing
+  show figure: set par(
+  leading: 0.35em,          
+  first-line-indent: 0pt,    
+  spacing: 0.65em
+)
+
+  show figure.where(kind: table): it => {
+    set figure.caption(position: top)
+    it
+  }
+
+  show figure.where(kind: image): it => {
+    set figure.caption(position: bottom)
+    it
+  }
 
   // Headings
   set heading(numbering: "1.1")
   show heading.where(level: 1): it => {
     if it.numbering != none {
       pagebreak(weak: true)
-      v(20pt)
+      v(10pt)
       align(center)[
         #text(size: 14pt, weight: "bold", upper([Chapter ] + counter(heading).display() + [: ] + it.body))
       ]
-      v(20pt)
+      v(10pt)
     } else {
-      v(20pt)
+      v(10pt)
       align(center)[
         #text(size: 14pt, weight: "bold", upper(it.body))
       ]
-      v(20pt)
+      v(10pt)
     }
   }
   show heading.where(level: 2): it => {
@@ -52,6 +66,7 @@
   show heading.where(level: 4): it => {
     v(12pt); text(size: 12pt, weight: "bold", it); v(6pt)
   }
+
 
   // Cover Page
   if title != none {
@@ -206,6 +221,7 @@
       #pagebreak()
     ]
   ]
+  set par(justify: true, leading: 0.5em, first-line-indent: 12.7mm, spacing: 1.0em)  
 
   // --- Main Matter Arabic numbering ---
   counter(page).update(1)
