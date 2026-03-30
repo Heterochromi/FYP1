@@ -18,30 +18,43 @@
   acknowledgements: none,
   list-of-symbols: none,
   list-of-appendices: none,
-  list-of-definitions: none,
   doc,
 ) = {
 
   // Typography
   set text(font: "Arial", size: 12pt, lang: "en")
-  set par(justify: true, leading: 1em) // ~1.5 spacing
+  show figure: set par(
+  leading: 0.35em,          
+  first-line-indent: 0pt,    
+  spacing: 0.65em
+)
+
+  show figure.where(kind: table): it => {
+    set figure.caption(position: top)
+    it
+  }
+
+  show figure.where(kind: image): it => {
+    set figure.caption(position: bottom)
+    it
+  }
 
   // Headings
   set heading(numbering: "1.1")
   show heading.where(level: 1): it => {
     if it.numbering != none {
       pagebreak(weak: true)
-      v(20pt)
+      v(10pt)
       align(center)[
         #text(size: 14pt, weight: "bold", upper([Chapter ] + counter(heading).display() + [: ] + it.body))
       ]
-      v(20pt)
+      v(10pt)
     } else {
-      v(20pt)
+      v(10pt)
       align(center)[
         #text(size: 14pt, weight: "bold", upper(it.body))
       ]
-      v(20pt)
+      v(10pt)
     }
   }
   show heading.where(level: 2): it => {
@@ -53,6 +66,7 @@
   show heading.where(level: 4): it => {
     v(12pt); text(size: 12pt, weight: "bold", it); v(6pt)
   }
+
 
   // Cover Page
   if title != none {
@@ -120,17 +134,18 @@
       #set text(size: 10pt)
       #project-id
       #h(1fr)
-      #context counter(page).display("i")
+      Prepared by: #student-name
       #v(-0.5em)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
     ],
     footer: [
       #set text(size: 10pt)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
-      #v(-0.5em)
-      Prepared by: #student-name
-      #h(1fr)
-      #course-code #project-phase #term-info
+      #align(center)[
+        #context counter(page).display("i")
+      ]
+      #v(15mm)
+      // #course-code #project-phase #term-info
     ],
   )
 
@@ -206,15 +221,8 @@
       #list-of-appendices
       #pagebreak()
     ]
-
-    #if list-of-definitions != none [
-      #heading(level: 1, numbering: none, outlined: true)[List of Definitions]
-      #v(1cm)
-      #list-of-definitions
-      #pagebreak()
-    ]
   ]
-  
+  set par(justify: true, leading: 0.5em, first-line-indent: 12.7mm, spacing: 1.0em)  
 
   // --- Main Matter Arabic numbering ---
   counter(page).update(1)
@@ -225,17 +233,18 @@
       #set text(size: 10pt)
       #project-id
       #h(1fr)
-      #context counter(page).display("1")
+      Prepared by: #student-name
       #v(-0.5em)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
     ],
     footer: [
       #set text(size: 10pt)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
-      #v(-0.5em)
-      Prepared by: #student-name
-      #h(1fr)
-      #course-code #project-phase #term-info
+      #align(center)[
+        #context counter(page).display("1")
+      ]
+      #v(15mm)
+      // #course-code #project-phase #term-info
     ],
   )
 
