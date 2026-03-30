@@ -50,8 +50,8 @@ $endif$
 $if(list-of-appendices)$
   list-of-appendices: [$list-of-appendices$],
 $endif$
-$if(list-of-definitions)$
-  list-of-definitions: [$list-of-definitions$],
+$if(list-of-terminologies)$
+  list-of-terminologies: [$list-of-terminologies$],
 $endif$
   doc,
 )

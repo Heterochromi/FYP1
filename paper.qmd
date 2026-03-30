@@ -47,7 +47,7 @@ format:
       Appendix B: FYP I Meeting Logs \
       Appendix C: Turnitin Similarity Index Page \
       Appendix D: Technical documentation
-    list-of-definitions: |
+    list-of-terminologies: |
       Impulse response: a digital "snapshot" or audio fingerprint that captures how a space responds to sound. \ It is used in audio processing to simulate the acoustics of a room.
 ---
 

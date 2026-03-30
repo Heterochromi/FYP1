@@ -18,6 +18,7 @@
   acknowledgements: none,
   list-of-symbols: none,
   list-of-appendices: none,
+  list-of-terminologies: none,
   doc,
 ) = {
 
@@ -219,6 +220,12 @@
       #heading(level: 1, numbering: none, outlined: true)[List of Appendices]
       #v(1cm)
       #list-of-appendices
+      #pagebreak()
+    ]
+    #if list-of-terminologies != none [
+      #heading(level: 1, numbering: none, outlined: true)[List of terminologies]
+      #v(1cm)
+      #list-of-terminologies
       #pagebreak()
     ]
   ]
