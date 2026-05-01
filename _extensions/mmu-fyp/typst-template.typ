@@ -18,16 +18,16 @@
   acknowledgements: none,
   list-of-symbols: none,
   list-of-appendices: none,
+  list-of-terminologies: none,
   doc,
 ) = {
-
   // Typography
   set text(font: "Arial", size: 12pt, lang: "en")
   show figure: set par(
-  leading: 0.35em,          
-  first-line-indent: 0pt,    
-  spacing: 0.65em
-)
+    leading: 0.35em,
+    first-line-indent: 0pt,
+    spacing: 0.65em,
+  )
 
   show figure.where(kind: table): it => {
     set figure.caption(position: top)
@@ -44,27 +44,29 @@
   show heading.where(level: 1): it => {
     if it.numbering != none {
       pagebreak(weak: true)
-      v(10pt)
       align(center)[
         #text(size: 14pt, weight: "bold", upper([Chapter ] + counter(heading).display() + [: ] + it.body))
       ]
-      v(10pt)
     } else {
-      v(10pt)
       align(center)[
         #text(size: 14pt, weight: "bold", upper(it.body))
       ]
-      v(10pt)
     }
   }
   show heading.where(level: 2): it => {
-    v(12pt); text(size: 12pt, weight: "bold", it); v(6pt)
+    v(12pt)
+    text(size: 12pt, weight: "bold", it)
+    v(6pt)
   }
   show heading.where(level: 3): it => {
-    v(12pt); text(size: 12pt, weight: "bold", it); v(6pt)
+    v(12pt)
+    text(size: 12pt, weight: "bold", it)
+    v(6pt)
   }
   show heading.where(level: 4): it => {
-    v(12pt); text(size: 12pt, weight: "bold", it); v(6pt)
+    v(12pt)
+    text(size: 12pt, weight: "bold", it)
+    v(6pt)
   }
 
 
@@ -132,20 +134,22 @@
     numbering: "i",
     header: [
       #set text(size: 10pt)
-      #project-id
+      #box(width: 110%, align(right)[
+        #context counter(page).display("i")
+      ])
+      Project ID: #project-id
       #h(1fr)
-      Prepared by: #student-name
       #v(-0.5em)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
     ],
     footer: [
-      #set text(size: 10pt)
+      #set text(size: 8pt)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
-      #align(center)[
-        #context counter(page).display("i")
-      ]
+      #grid(
+        columns: (1fr, auto, 1fr),
+        align(left)[Prepared by: #student-name], align(center)[#course-code], align(right)[#term-info],
+      )
       #v(15mm)
-      // #course-code #project-phase #term-info
     ],
   )
 
@@ -221,8 +225,14 @@
       #list-of-appendices
       #pagebreak()
     ]
+    #if list-of-terminologies != none [
+      #heading(level: 1, numbering: none, outlined: true)[List of Terminologies]
+      #v(1cm)
+      #list-of-terminologies
+      #pagebreak()
+    ]
   ]
-  set par(justify: true, leading: 0.5em, first-line-indent: 12.7mm, spacing: 1.0em)  
+  set par(justify: true, leading: 0.5em, first-line-indent: 12.7mm, spacing: 1.0em)
 
   // --- Main Matter Arabic numbering ---
   counter(page).update(1)
@@ -231,20 +241,23 @@
     numbering: "1",
     header: [
       #set text(size: 10pt)
-      #project-id
+      #box(width: 110%, align(right)[
+        #context counter(page).display("1")
+      ])
+      #set text(size: 8pt)
+      Project ID: #project-id
       #h(1fr)
-      Prepared by: #student-name
       #v(-0.5em)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
     ],
     footer: [
-      #set text(size: 10pt)
+      #set text(size: 8pt)
       #line(length: 100%, stroke: 1.5pt + mmu-blue)
-      #align(center)[
-        #context counter(page).display("1")
-      ]
+      #grid(
+        columns: (1fr, auto, 1fr),
+        align(left)[Prepared by: #student-name], align(center)[#course-code], align(right)[#term-info],
+      )
       #v(15mm)
-      // #course-code #project-phase #term-info
     ],
   )
 
