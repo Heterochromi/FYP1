@@ -1,6 +1,6 @@
 # MMU FYP Format
 
-**Format rendered according to the handbook's exact specifications.**
+**Format rendered according to the handbook's specifications. MOSTLY :)**
 
 ![ShowCase gif](showcase/showcase.gif)
 
